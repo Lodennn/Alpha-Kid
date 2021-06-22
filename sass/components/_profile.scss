@@ -1,0 +1,42 @@
+.profile {
+
+    &__list {
+        display: flex;
+    }
+    &__item {
+        width: 9.5rem;
+        height: 9.5rem;
+        border: 5px solid $color-primary-light;
+        border-radius: 50%;
+        margin: 0 1rem;
+        background-size: cover;
+        @include respond(tab-port) {
+            width: 7rem;
+            height: 7rem;
+            margin: 0 .6rem;
+        }
+        position: relative;
+        &.active {border: 5px solid $color-primary;}
+
+        &--1 {background-image: url(../images/pprofile/m1.png);}
+        &--2 {background-image: url(../images/pprofile/f1.png);}
+        &--3 {background-image: url(../images/pprofile/m2.png);}
+        &--create {
+            background-image: url(../images/add-profile.png);
+            position: relative;
+            & i {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                background: #FFF;
+                @include flexCenter;
+                font-size: 1.7rem;
+                color: #707070;
+                border: 1px solid #e2e2e2;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// Intro Section
+.intro {
+    // height: 100vh;
+    padding: 3rem 3rem 5rem 3rem;
+    & img {
+        position: absolute;
+        width: 20rem;
+        &.finn {        
+            top: -15%;
+            right: -3%;
+        }
+        &.jake {
+            bottom: 0%;
+            left: -11%;
+        }
+        &.gambul {        
+            top: -20%;
+            right: -3%;
+        }
+        &.darwin {
+            bottom: 0%;
+            left: -11%;
+        }
+    }
+    &--primary {
+        background:   linear-gradient(rgba($color-primary, .85), rgba($color-primary, .85)),
+                            url(../images/intro/kids-pattern.gif) no-repeat center center;
+        background-size: cover;
+    }
+    &--secondary {
+        background:   linear-gradient(rgba($color-secondary, .85), rgba($color-secondary, .85)),
+                            url(../images/intro/kids-pattern.gif) no-repeat center center;
+        background-size: cover;
+    }
+    &--tertiary {
+        background:   linear-gradient(rgba($color-tertiary, .85), rgba($color-tertiary, .85)),
+                            url(../images/intro/kids-pattern.gif) no-repeat center center;
+        background-size: cover;
+    }
+    &__main {
+        height: 35rem;
+    }
+    & .col-md-6:not(:last-of-type) {
+        padding-left: 0;
+        @include respond(tab-port) {
+            padding-right: 0
+        }
+    }
+    & .col-md-6:last-child {
+        padding-right: 0;
+        @include respond(tab-port) {
+            padding-left: 0
+        }
+    }
+}

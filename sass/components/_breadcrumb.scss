@@ -1,0 +1,8 @@
+.breadcrumb {
+    background: $color-primary-dark-soft;
+    font-size: 1.5rem;
+    &-item a,
+    &-item a:visited,
+    &-item a:link{color: $color-primary;text-decoration: none}
+    &-item.active {color: $color-white}
+}

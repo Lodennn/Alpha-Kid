@@ -1,0 +1,18 @@
+{
+  "name": "alphakid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/stylesheet.css --watch"
+  },
+  "author": "Lodenn",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  }
+}

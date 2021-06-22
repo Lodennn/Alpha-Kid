@@ -1,0 +1,28 @@
+.half-preview {
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    
+    &--1 {
+        background: url(../images/gif/home-game.gif) no-repeat center center;
+        background-size: cover;
+    }
+    
+    &--2 {
+        background: url(../images/gif/home-video.gif) no-repeat center center;
+        background-size: cover;
+    }
+
+    &--videos {
+        background: url(../images/gif/videos.gif) no-repeat center center;
+        background-size: cover;
+    }
+
+    &--games {
+        background: url(../images/gif/games.gif) no-repeat center center;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,19 @@
+// Footer
+
+.footer {
+    background: $color-primary-dark;
+    padding: 3rem 1rem;
+    font-size: 2rem;
+    & .col-sm-4 {
+        @include respond(tab-port) {
+            margin-bottom: 2rem
+        }
+    }
+    &__logo {
+        width: 15rem
+    }
+    & ul {
+        font-size: 1.6rem;
+        a {color: #FFF}
+    }
+}

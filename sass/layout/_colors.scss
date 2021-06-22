@@ -1,0 +1,25 @@
+.colors {
+    height: 3rem;
+    display: flex;
+    > div {
+        flex-grow: 1;
+        flex-basis: 33.33333%;
+        &:first-child {
+            background: $color-primary;
+        }    
+        &:nth-child(2) {
+            background: $color-secondary;
+        }    
+        &:last-child {
+            background: $color-tertiary;
+            & ul.uppernav__list {
+                height: 100%;
+                li.uppernav__item {
+                    font-size: 1.4rem;
+                    margin-right: 4rem;
+                }
+            }
+        }    
+    }
+    
+}

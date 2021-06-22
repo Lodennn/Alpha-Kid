@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>Workshops</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome-all.css" />
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+
+    <!-- Loading Screen-->
+    <div id='loading'>
+        <div class="loading__primary"></div>
+        <div class="loading__secondary"></div>
+        <div class="loading__tertiary"></div>
+    </div>
+    <!-- Loading Screen-->
+
+    <!-- Uppernav -->
+    <div class="uppernav">
+        <ul class="list-unstyled uppernav__list">
+            <li class='uppernav__item'>
+                <a href="shop.html" class='uppernav__link'>
+                    <i class="fas fa-shopping-cart uppernav__icon"></i>
+                    <span class='uppernav-text'>Shop</span>
+                </a>
+            </li>
+            <li class='uppernav__item' id='notification__btn'>
+                <i class="fas fa-bell uppernav__icon"></i>
+                <span class='uppernav-text'>Notifications</span>
+                <span class='notification__count'>6</span>
+                <div class="settings">
+                    <h5>Notifications</h5>
+                    <ul class="list-unstyled notification">
+                        <li class='notify'>
+                                <p class="paragraph">
+                                    Your Student <strong>Mohamed has Pathed</strong> The exam
+                                </p>
+                            <div class="notify__date float-right">3 min ago</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Sara has Pathed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">1 hour</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Mohamed has Failed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">5 min ago</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Sara has Pathed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">1 hour</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Mohamed has Pathed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">3 min ago</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Sara has Failed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">5 min ago</div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class='uppernav__item' id='profile__btn'>
+                <i class='fa fa-user uppernav__icon'></i>
+                <span class='uppernav__text'>Micheal <i class='fas fa-chevron-down'></i></span>
+                <div class="profile__settings">
+                    <ul class="list-unstyled links">
+                        <li><a href="teacher.html">Profile</a></li>
+                        <li><a href="index.html">Logout</a></li> 
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Uppernav -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo-box">
+            <a href='index-teacher.html'><img src="images/Logo.png" alt="Logo" class='header__logo img-fluid'></a>
+        </div>
+        <ul class="list-unstyled header__nav">
+            <li class="header__link-box header__link-box--1 workshop-active">
+                <a href="teacher-workshops.html" class='header__link header__link--workshop'><i class="fas fa-home header__icon header__icon--workshop"></i>&nbsp;Workshops</a>
+            </li>
+            <!-- <li class="header__link-box header__link-box--2">
+                <a href="videos.html" class='header__link'><i class="fas fa-play header__icon"></i>&nbsp;Videos</a>
+            </li>
+            <li class="header__link-box header__link-box--3">
+                <a href="games.html" class='header__link'><i class="fas fa-gamepad header__icon"></i>&nbsp;Games</a>
+            </li> -->
+        </ul>
+    </header>
+    <!-- Header -->
+
+    <!-- Characters -->
+    <div class="characters">
+        <ul class="list-unstyled characters__list">
+            <a href='game.html'><li class="characters__character characters__character--1"></li></a>
+            <a href='video.html'><li class="characters__character characters__character--2"></li></a>
+            <a href='game.html'><li class="characters__character characters__character--3"></li></a>
+            <a href='video.html'><li class="characters__character characters__character--4"></li></a>
+            <a href='game.html'><li class="characters__character characters__character--5"></li></a>
+            <a href='video.html'><li class="characters__character characters__character--6"></li></a>
+            <a href='game.html'><li class="characters__character characters__character--7"></li></a>
+        </ul>
+    </div>
+    <!-- Characters -->
+
+    <!-- Intro -->
+    <div class="intro intro--tertiary mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="full__preview mt-5">
+                        <img src="images/red.png" alt="" class='sesame-red'>
+                        <img src="images/blue.png" alt="" class='sesame-blue'>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="full__preview-image full__preview-image--index"></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="full__preview-text">
+                                    <span>Alphabetic</span>
+                                    <span>
+                                        <span>A</span>
+                                        <span>B</span>
+                                        <span>C</span>
+                                    </span> 
+                                    <a href='teacher-single-workshop.html'>
+                                        <button class='ak-btn ak-btn-primary'>Learn now</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Intro -->
+
+    <!-- Workshops -->
+    <div class="activities activities--primary mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <a href='teacher-single-workshop.html'>
+                        <div class="workshop workshop--1">
+                            <div class='workshop__data'>
+                                <div class="workshop__data--name mb-3">
+                                    <h4 class='heading-secondary'>Animals Names</h4>
+                                </div>
+                                <div class="ak-btn ak-btn-primary float-right">Learn now</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <a href='teacher-single-workshop.html'>
+                        <div class="workshop workshop--2">
+                            <div class='workshop__data'>
+                                <div class="workshop__data--name mb-3">
+                                    <h4 class='heading-secondary'>Writing & Reading</h4>
+                                </div>
+                                <div class="ak-btn ak-btn-primary float-right">Learn now</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <a href='teacher-single-workshop.html'>
+                        <div class="workshop workshop--3">
+                            <div class='workshop__data'>
+                                <div class="workshop__data--name mb-3">
+                                    <h4 class='heading-secondary'>Learn Math Easy</h4>
+                                </div>
+                                <div class="ak-btn ak-btn-primary float-right">Learn now</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <a href='teacher-single-workshop.html'>
+                        <div class="workshop workshop--4">
+                            <div class='workshop__data'>
+                                <div class="workshop__data--name mb-3">
+                                    <h4 class='heading-secondary'>Alphabetic ABC</h4>
+                                </div>
+                                <div class="ak-btn ak-btn-primary float-right">Learn now</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <a href='teacher-single-workshop.html'>
+                        <div class="workshop workshop--5">
+                            <div class='workshop__data'>
+                                <div class="workshop__data--name mb-3">
+                                    <h4 class='heading-secondary'>Colors Names</h4>
+                                </div>
+                                <div class="ak-btn ak-btn-primary float-right">Learn now</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <a href='teacher-single-workshop.html'>
+                        <div class="workshop workshop--6">
+                            <div class='workshop__data'>
+                                <div class="workshop__data--name mb-3">
+                                    <h4 class='heading-secondary'>Learn Counting</h4>
+                                </div>
+                                <div class="ak-btn ak-btn-primary float-right">Learn now</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <a href='teacher-single-workshop.html'>
+                        <div class="workshop workshop--7">
+                            <div class='workshop__data'>
+                                <div class="workshop__data--name mb-3">
+                                    <h4 class='heading-secondary'>Trees & Birds</h4>
+                                </div>
+                                <div class="ak-btn ak-btn-primary float-right">Learn now</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <a href='teacher-single-workshop.html'>
+                        <div class="workshop workshop--8">
+                            <div class='workshop__data'>
+                                <div class="workshop__data--name mb-3">
+                                    <h4 class='heading-secondary'>Drawing Characters</h4>
+                                </div>
+                                <div class="ak-btn ak-btn-primary float-right">Learn now</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class='load-more'>
+            <button class='load-more-btn'>Load more</button>
+        </div>
+    </div>
+    <!-- Workshops -->
+    
+    <!-- Footer -->
+    <footer class='footer'>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="footer__logo">
+                        <img src="images/Logo.png" alt="" class='img-fluid' />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h2 class="heading-primary heading-white">Sitemap</h2>
+                    <ul class='list-unstyled'>
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href='workshops.html'>Workshops</a></li>
+                        <li><a href='videos.html'>Videos</a></li>
+                        <li><a href='games.html'>Games</a></li>
+                        <li><a href='parent.html'>Parent Profile</a></li>
+                        <li><a href='teacher.html'>Teacher Profile</a></li>
+                        <li><a href='shop.html'>Shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-">
+                    <h2 class="heading-primary heading-white">Contact us</h2>
+                    <p class='paragraph paragraph-white'>exampleemail.gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script> <!-- Javascript Tooltip library -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Nicescroll -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src='js/plugins.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+/* Uppernav */
+.uppernav {
+    background: $color-primary;
+    padding: 1rem 3rem 1rem;
+    font-size: 1.3rem;
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0
+    }
+    &__item {
+        margin-right: 2rem;
+        color: $color-white;
+        position: relative;
+        font-size: 1.4rem;
+        cursor: pointer;
+        .notification__count {
+            position: absolute;
+            top: -.8rem;
+            left: -1.4rem;
+            background: #F00;
+            font-size: 1rem;
+            border-radius: 50%;
+            padding: .1rem 0.6rem;
+        }
+        & i.fa-chevron-down {
+            margin-left: .3rem;
+        }
+    }
+    &__icon {
+        margin-right: .3rem
+    }
+    &__link,
+    &__link:visited,
+    &__link:link {
+        text-decoration: none;
+        color: $color-white;
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+/* Uppernav */

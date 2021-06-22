@@ -1,0 +1,90 @@
+// Active Status
+.workshop-active {background: $color-primary;color: $color-white;}
+.workshop-active .header__link--workshop {color: $color-white;}
+.workshop-active .header__icon--workshop {color: $color-white;}
+// Active Status
+
+// Teacher Workshop
+.teacher-workshop {
+    // overflow: hidden;
+    .teacher-workshop__image {
+        height: 50vh;
+        background: url(../images/workshops/1.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .kid {
+        width: 11rem;
+        height: 11rem;
+        margin: auto;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0px 2px 10px #848484;
+        border: 5px solid $color-primary-light;
+        position: relative;
+        cursor: pointer;
+
+        &--1{background-image: url(../images/characters/1.jpg);}
+        &--2{background-image: url(../images/characters/2.jpg);}
+        &--3{background-image: url(../images/characters/3.jpg);}
+        &--4{background-image: url(../images/characters/4.jpg);}
+        &--5{background-image: url(../images/characters/5.jpg);}
+
+        & span {
+            position: absolute;
+            bottom: -4rem;
+            left: -2rem;
+            font-size: 1.3rem;
+            width: 15rem;
+            text-align: center;
+        }
+        &__info {
+            width: 30rem;
+            background: $color-white;
+            border-radius: 3px;
+            padding: 2rem;
+            position: absolute;
+            top: -15rem;
+            right: -10rem;
+            z-index: 1;
+            box-shadow: 2px 2px 1rem #cacaca;
+            opacity: 0;
+            transition: all .3s ease;
+            @include respond(tab-port) {
+                width: 20rem;
+                right: -5rem;
+                h3.heading-primary {
+                    font-size: 2rem;
+                }
+                p.paragraph {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.workshop-iframe {
+    position: relative;
+    button {
+        border: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        background: $color-secondary;
+        color: $color-secondary-dark-1;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5rem;
+        box-shadow: 0 0.8rem 0px;
+        transition: all .2s ease;
+        &.fa-chevron-left{left: -5%;@include respond(tab-port) {left: 5%}}
+        &.fa-chevron-right{right: -10%;@include respond(tab-port) {right: -3%}}
+        &:focus {
+            box-shadow: 0 0.4rem 0px;
+            outline: none;
+        }
+    }
+}

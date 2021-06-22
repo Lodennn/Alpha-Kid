@@ -1,0 +1,22 @@
+.add-question {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    padding: 3rem;
+    cursor: pointer;
+    i {
+        background: #e8e6e6;
+        padding: 1rem;
+        border-radius: 50%;
+        color: #afadad;
+    }
+    h4.heading-primary {
+        font-size: 2rem;
+        margin-top: 1rem;
+        color: #7b7b7b;
+    }
+}

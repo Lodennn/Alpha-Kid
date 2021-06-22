@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>Alpha Kid</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome-all.css" />
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+
+    <!-- Loading Screen-->
+    <div id='loading'>
+        <div class="loading__primary"></div>
+        <div class="loading__secondary"></div>
+        <div class="loading__tertiary"></div>
+    </div>
+    <!-- Loading Screen-->
+    
+    <!-- Auth -->
+    <div class="auth">
+        <div class="header__logo-box">
+            <a href='index.html'><img src="images/Logo.png" alt="Logo" class='header__logo img-fluid'></a>
+        </div>
+        <div class="auth-form">
+            <div class="front">
+                <form>
+                    <h2 class="heading-secondary mb-5">Login</h2>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">Remember me</label>
+                    </div>
+                    <div class='signup'>
+                        <a href="index-parent.html">
+                            <button type='button' class="btn btn-primary">Login</button>
+                        </a>
+                        <a href='#' id='signup'>Create new account ?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="back">
+                <form>
+                    <h2 class="heading-secondary mb-5">Register</h2>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">User Type</label>
+                        <select class='form-control'>
+                            <option value="">Select Type</option>
+                            <option value="parent">Parent</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                    </div>
+                    <a href="index-teacher.html">
+                        <button type='button' class="btn btn-primary mt-5">Signup</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Auth -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script> <!-- Javascript Tooltip library -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/plugins.js'></script>
+</body>
+
+</html>

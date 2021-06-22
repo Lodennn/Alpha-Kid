@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>Profile</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome-all.css" />
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+
+    <!-- Loading Screen-->
+    <div id='loading'>
+        <div class="loading__primary"></div>
+        <div class="loading__secondary"></div>
+        <div class="loading__tertiary"></div>
+    </div>
+    <!-- Loading Screen-->
+
+    <!-- Uppernav -->
+    <div class="uppernav">
+        <ul class="list-unstyled uppernav__list">
+            <li class='uppernav__item'>
+                <a href="shop.html" class='uppernav__link'>
+                    <i class="fas fa-shopping-cart uppernav__icon"></i>
+                    <span class='uppernav-text'>Shop</span>
+                </a>
+            </li>
+            <li class='uppernav__item' id='notification__btn'>
+                <i class="fas fa-bell uppernav__icon"></i>
+                <span class='uppernav-text'>Notifications</span>
+                <span class='notification__count'>6</span>
+                <div class="settings">
+                    <h5>Notifications</h5>
+                    <ul class="list-unstyled notification">
+                        <li class='notify'>
+                                <p class="paragraph">
+                                    Your Student <strong>Mohamed has Pathed</strong> The exam
+                                </p>
+                            <div class="notify__date float-right">3 min ago</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Sara has Pathed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">1 hour</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Mohamed has Failed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">5 min ago</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Sara has Pathed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">1 hour</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Mohamed has Pathed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">3 min ago</div>
+                        </li>
+                        <li class='notify'>
+                            <p class="paragraph">
+                                Your Student <strong>Sara has Failed</strong> The exam
+                            </p>
+                            <div class="notify__date float-right">5 min ago</div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class='uppernav__item' id='profile__btn'>
+                <i class='fa fa-user uppernav__icon'></i>
+                <span class='uppernav__text'>Micheal <i class='fas fa-chevron-down'></i></span>
+                <div class="profile__settings">
+                    <ul class="list-unstyled links">
+                        <li><a href="teacher.html">Profile</a></li>
+                        <li><a href="index.html">Logout</a></li> 
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Uppernav -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__logo-box">
+                <a href='index-teacher.html'><img src="images/Logo.png" alt="Logo" class='header__logo img-fluid'></a>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <div class="container">
+                <li class="breadcrumb-item"><a href="index-teacher.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            </div>
+        </ol>
+    </nav>
+    <!-- Breadcrumb -->
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <div class="container">
+            <h2 class='heading-primary mt-5'>Dashboard</h2>
+            <button class="ak-btn ak-btn-cw mt-5 mb-5" data-toggle="modal" data-target="#createWorkshop">
+                <i class="fas fa-plus"></i>
+                Create Workshop
+            </button>
+            <!-- Teacher Dashboard -->
+            <div class="recent-learned mt-5">
+                <h2 class='heading-primary mt-5'>Completed Workshops</h2>
+                <!-- Dashboard Slider-->
+                <div id="recent-learned" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row mt-5">
+                                <div class="col-4 mb-5 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--1"></div>
+                                        <h4 class='heading-secondary mt-3'>Animals Names</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--2"></div>
+                                        <h4 class='heading-secondary mt-3'>Writing & Reading</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--3"></div>
+                                        <h4 class='heading-secondary mt-3'>Learn Math Easy</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mt-5">
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--4"></div>
+                                        <h4 class='heading-secondary mt-3'>Alphabetic ABC</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--5"></div>
+                                        <h4 class='heading-secondary mt-3'>Colors Names</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--6"></div>
+                                        <h4 class='heading-secondary mt-3'>Learn Counting</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mt-5">
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--7"></div>
+                                        <h4 class='heading-secondary mt-3'>Trees & Birds</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--8"></div>
+                                        <h4 class='heading-secondary mt-3'>Drawing Characters</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop.html'>
+                                        <div class="dashboard-card dashboard-card__ws--9"></div>
+                                        <h4 class='heading-secondary mt-3'>Animals Names</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#recent-learned" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recent-learned" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- Dashboard Slider-->
+            </div>
+            <!-- Teacher Dashboard -->
+            <!-- Teacher Dashboard -->
+            <div class="recent-learned mt-5">
+                <h2 class='heading-primary mt-5'>Uncompleted Workshops</h2>
+                <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+                    These workshops wont be available unless you <strong>create an exam for it!</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Dashboard Slider-->
+                <div id="not-completed-workshops" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row mt-5">
+                                <div class="col-4 mb-5 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--1"></div>
+                                        <h4 class='heading-secondary mt-3'>Animals Names</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--2"></div>
+                                        <h4 class='heading-secondary mt-3'>Writing & Reading</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--3"></div>
+                                        <h4 class='heading-secondary mt-3'>Learn Math Easy</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mt-5">
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--4"></div>
+                                        <h4 class='heading-secondary mt-3'>Alphabetic ABC</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--5"></div>
+                                        <h4 class='heading-secondary mt-3'>Colors Names</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--6"></div>
+                                        <h4 class='heading-secondary mt-3'>Learn Counting</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mt-5">
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--7"></div>
+                                        <h4 class='heading-secondary mt-3'>Trees & Birds</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--8"></div>
+                                        <h4 class='heading-secondary mt-3'>Drawing Characters</h4>
+                                    </a>
+                                </div>
+                                <div class="col-4 mb-5">
+                                    <a href='teacher-workshop-uncompleted.html'>
+                                        <div class="dashboard-card dashboard-card__ws--9"></div>
+                                        <h4 class='heading-secondary mt-3'>Animals Names</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#not-completed-workshops" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#not-completed-workshops" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- Dashboard Slider-->
+            </div>
+            <!-- Teacher Dashboard -->
+        </div>
+    </div>
+    <!-- Dashboard -->
+
+    <!-- Footer -->
+    <footer class='footer mt-5'>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="footer__logo">
+                        <img src="images/Logo.png" alt="" class='img-fluid' />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h2 class="heading-primary heading-white">Sitemap</h2>
+                    <ul class='list-unstyled'>
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href='workshops.html'>Workshops</a></li>
+                        <li><a href='videos.html'>Videos</a></li>
+                        <li><a href='games.html'>Games</a></li>
+                        <li><a href='parent.html'>Parent Profile</a></li>
+                        <li><a href='teacher.html'>Teacher Profile</a></li>
+                        <li><a href='shop.html'>Shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-">
+                    <h2 class="heading-primary heading-white">Contact us</h2>
+                    <p class='paragraph paragraph-white'>exampleemail.gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Add Workshop Modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="createWorkshop" tabindex="-1" role="dialog" aria-labelledby="createWorkshopTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" id='add-workshop-modal'>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Add Workshop</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Workshop name</label>
+                        <input type="text" class="form-control" id="workshop-name" aria-describedby="emailHelp" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Workshop description</label>
+                        <textarea class='form-control' placeholder='Enter Description' id='workshop-description'></textarea>
+                    </div>
+                    <div class='form-group'>
+                        <label for="exampleInputEmail1">Upload videos</label>
+                        <input type="file" name="" id="" multiple>
+                        <div class="upload-area">
+                            <div>
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <h4>Drag and drop your files here</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Done</button>
+                    <button type="submit" class="btn btn-success float-right" data-toggle="modal" data-target="#createExam" disabled id='create-exam-button'>Create Exam</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Add Workshop Modal -->
+
+    <!-- Add Exam Modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="createExam" tabindex="-1" role="dialog" aria-labelledby="createExamTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document" id='add-exam-modal'>
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Exam</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <!-- Question Group -->
+                            <div class="col-sm-6">
+                                <!-- Question -->
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Question 1</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter question 1">
+                                </div>
+                                <!-- Question -->
+                                <!-- Answers -->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 1">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 2">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 3">
+                                </div>
+                                <!-- Answers -->
+                            </div>
+                            <!-- Question Group -->
+                            <!-- Question Group -->
+                            <div class="col-sm-6">
+                                <!-- Question -->
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Question 2</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter question 2">
+                                </div>
+                                <!-- Question -->
+                                <!-- Answers -->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 1">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 2">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 3">
+                                </div>
+                                <!-- Answers -->
+                            </div>
+                            <!-- Question Group -->
+                            <!-- Question Group -->
+                            <div class="col-sm-6">
+                                <!-- Question -->
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Question 3</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Enter question 3">
+                                </div>
+                                <!-- Question -->
+                                <!-- Answers -->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 1">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 2">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 3">
+                                </div>
+                                <!-- Answers -->
+                            </div>
+                            <!-- Question Group -->
+                            <!-- Question Group -->
+                            <div class="col-sm-6">
+                                <!-- Question -->
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Question 4</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp" placeholder="Enter question 4">
+                                </div>
+                                <!-- Question -->
+                                <!-- Answers -->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 1">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 2">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter answer 3">
+                                </div>
+                                <!-- Answers -->
+                            </div>
+                            <!-- Question Group -->
+                        </div>    
+    
+    
+                        <!-- ************************************************* -->
+                        <!-- Inserted Question -->
+                        <div class='row'>
+                            <div id="inserted-question"></div>
+                            <!-- ****&&&& HERE THE NEW QUESTION ADDED &&&&**** -->
+                            
+                            <!-- ****&&&& HERE THE NEW QUESTION ADDED &&&&**** -->
+                            <!-- Add Question -->
+                            <div class="col-sm-6">
+                                <div class="add-question">
+                                    <i class='fas fa-plus'></i>
+                                    <h4 class="heading-primary">Add Question</h4>
+                                </div>
+                            </div>
+                            <!-- Add Question -->
+                        </div>
+                        <!-- Inserted Question -->
+                        <!-- ************************************************* -->
+    
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            </div>
+        <!-- Add Exam Modal -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script> <!-- Javascript Tooltip library -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Nicescroll -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src='js/plugins.js'></script>
+</body>
+
+</html>

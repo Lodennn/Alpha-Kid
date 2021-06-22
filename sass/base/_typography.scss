@@ -1,0 +1,25 @@
+body {
+    font-family: 'Chilanka', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.heading-primary {
+    font-size: 3.5rem
+}
+.heading-secondary {
+    font-size: 3rem;
+    font-family: $font-secondary;
+    color: $color-primary-darker
+}
+.paragraph {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: $color-grey-dark
+}
+.heading-white {
+    color: $color-white
+}
+.paragraph-white {
+    color: $color-white
+}

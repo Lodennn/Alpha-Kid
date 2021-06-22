@@ -1,0 +1,50 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+@mixin prefixer($prop, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{"-" + $prefix  + "-" + $prop}: $value;
+    }
+    #{$prop}: $value;
+}
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Mediaquery Manager
+// iswidth < 600 ?
+// iswidth < 900 ?
+// iswidth < 1200 ?
+// iswidth > 1800 ?
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media(max-width: 37.5em) { @content }
+    }
+    @if $breakpoint == tab-port {
+        @media(max-width: 56.25em) { @content }
+    }
+    @if $breakpoint == tab-land {
+        @media(max-width: 75em) { @content }
+    }
+    @if $breakpoint == big-desktop {
+        @media(min-width: 112.5em) { @content }
+    }
+    @if $breakpoint == phone-between-large-Desktop {
+        @media (min-width: 768px) and (max-width: 1250px) { @content }
+    }
+    @if $breakpoint == tabport-between-tabland {
+        @media (min-width: 768px) and (max-width: 992px) { @content }
+    }
+}

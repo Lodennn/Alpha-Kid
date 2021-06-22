@@ -1,0 +1,33 @@
+.activity-preview {
+    display: flex;
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+    .responsive-fix-wrapper {
+        @include respond(tab-port) {
+            display: flex;
+            & .sub__box {
+                @include respond(tab-port) {
+                    flex-basis: 50%;
+                }
+            }
+        }
+    }
+    &__main {
+        flex-grow: 1;
+        flex-basis: 55%;
+    }
+    &__sub {
+        flex-grow: 1;
+        h2.primary-heading {
+            @include respond(tab-port) {
+                margin-top: 2rem
+            }
+        }
+        & .activity {
+            margin-left: 2rem;
+            margin-bottom: 1.7rem;
+            height: 18.7rem;
+        }
+    }
+}

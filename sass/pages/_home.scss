@@ -1,0 +1,11 @@
+// Feature Section
+.features {
+    padding: 60px 0;
+    &__box {
+        text-align: center
+    }
+    &__image {
+        width: 20rem;
+        margin: auto
+    }
+}
